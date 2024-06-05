@@ -102,6 +102,7 @@ main {
 
 main h2 {
   font-size: 4.1rem;
+  font-weight: 900;
   animation: fadeIn 1s ease-in-out;
 }
 
@@ -119,6 +120,7 @@ main p {
   line-height: 1.9;
   margin: 1rem 0;
   width: 50%;
+  font-weight: bolder;
 }
 
 .form-input {
@@ -159,10 +161,10 @@ header .btn {
   display: none;
 }
 header h2 {
-  animation: fadeIn 3s ease-in-out;
+  animation: fadeIn 1s ease-in-out;
   font-weight: 900;
-  font-family: cursive;
-  text-shadow: 0 0 10px red;
+  font-family: monospace;
+  text-shadow: 0  0 10px blueviolet;
 }
 
 /* Sections */
@@ -304,38 +306,70 @@ header h2 {
   box-shadow: 1px 2px 4px 6px blueviolet;
   text-shadow: 0 0 10px blueviolet;
 }
-#section3 .project .work p {
-  position: absolute;
-  bottom: 0%;
-  left: 50%;
-  transform: translate(-0%, -50%);
-
-  height: 5vh;
+#section3 .project .pro-one {
   width: 100%;
-  background: #009;
-  font-size: 14px;
+  height: 80%;
+}
+#section3 h3 {
+  font-size: 56px;
+  animation: fadeService 5s infinite ease-in-out;
   font-weight: 900;
+  font-family: monospace;
+  color: wheat;
+  text-shadow: 0  0 10px blueviolet;
+}
+#section3 h3 span {
+  animation: fadeService 6s infinite ease-in-out;
+  color: white;
+}
+#section3 .project p {
+  color: white;
+  background: linear-gradient(180deg, #0000, #000) ;
+  font-size: 14px;
+  height: 20%;
+  width: 100%;
 }
 #viewModal {
   background: linear-gradient(95deg, #0049, #0004); 
   width: 100wh;
   height: 100vh;
 }
-#viewModal .modal-dialog {
-  position: absolute; 
-  top: 50%; 
-  left: 50%; 
-  transform: translate(-50%, -50%); 
-  width: 100%; 
-  padding-left: 0; 
-  padding-right: 20px;
+#viewModal .modal-pro {
+  color: white;
+  background: linear-gradient(180deg, #0000,#004 );
+  border-radius: 5px;
 }
-#viewModal .modal-video video {
+#viewModal .modal-pro h4 {
+  font-weight: 900;
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 24px;
+}
+#viewModal .modal-pro h6 {
+  font-weight: 900;
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 18px;
+}
+#viewModal .modal-pro span {
+  font-weight: 900;
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 14px;
+}
+#viewModal video {
   height: 60vh;
   width: 100%;
   object-fit: cover;
 }
-
+#viewModal .modal-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 10px; 
+  max-height:80%; 
+  width: 90%; 
+  margin: auto;
+  background-color: blueviolet;
+}
 #section4 {
   height: 100vh;
   color: wheat;
@@ -345,16 +379,35 @@ header h2 {
   width: 100%;
   background-color: blueviolet;
 }
-#section4 .card img {
-  height: 40vh;
-  width: 100%;
-}
-#section4 .card p {
-  font-size: 18px;
-  line-height: 1.2rem;
+
+#section4 .card i {
+  font-size: 48px;
+  font-weight: 900;
   text-align: center;
 }
+#section4 .card p {
+  font-size: 12px;
+  font-weight: 600;
+  text-align: center;
+}
+#section4 .card p span {
+  font-size: 18px;
+  font-weight: 900;
+  animation: fadeIn 3s  ease-in-out ;
+}
+#section4 h2 {
+  font-size: 56px;
+  font-weight: 900;
+  text-transform: uppercase;
+  font-family: monospace;
+  text-shadow: 0  0 10px blueviolet;
+  animation: fadeService 5s infinite ease-in-out;
 
+}
+
+#section4 h2 .two {
+  animation: fadeService 4s infinite ease-in-out;
+}
 
 .title-sec {
   border-left: 10px solid wheat;
@@ -429,26 +482,26 @@ footer .social i {
   }
 }
 
+@keyframes fadeService {
+  from {
+      opacity: 0;
+  }
+  to {
+      opacity: 0.5;
+      color: blueviolet;
+  }
+  from {
+    opacity: 1;
+    color: wheat;
+  }
+  to {
+    opacity: 0;
+    color: white;
+  }
+}
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+/* small devices */
 
 @media (max-width: 768px) {
   main h2 {
@@ -529,5 +582,44 @@ footer .social i {
   #section3 .project {
     background: url('assets/img/bg/ps4.jpg') no-repeat center center/cover;;
     height: 25vh;
+  }
+  #viewModal {
+    background: linear-gradient(95deg, #0049, #0009); 
+    width: 100wh;
+    height: 100vh;
+  }
+  #viewModal .modal-pro {
+    color: white;
+    border-radius: 5px;
+  }
+  #viewModal .modal-pro h4 {
+    font-weight: 900;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 18px;
+  }
+  #viewModal .modal-pro h6 {
+    font-weight: 900;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 15px;
+  }
+  #viewModal .modal-pro span {
+    font-weight: 900;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 12px;
+  }
+  #viewModal video {
+    height: 50vh;
+    width: 100%;
+    object-fit: cover;
+  }
+  #viewModal .modal-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height:100vh; 
+    line-height: 13px;
+    width: 100%; 
+    background: linear-gradient(180deg, #004,blueviolet );
   }
 }
