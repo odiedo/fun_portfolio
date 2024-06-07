@@ -279,7 +279,31 @@ header h2 {
   color: wheat;
 } */
 #section3 .project {
-  background: url('assets/img/bg/ps4.jpg') no-repeat center center/cover;;
+  background: url('assets/img/bg/ps4.jpg') no-repeat center center/cover;
+  height: 40vh;
+}
+#section3 .project1 {
+  background: url('assets/img/bg/pos-icon.png') no-repeat center center/cover;
+  height: 40vh;
+}
+#section3 .project2 {
+  background: url('assets/img/bg/funsms.png') no-repeat center center/cover;
+  height: 40vh;
+}
+#section3 .project3 {
+  background: url('assets/img/bg/ugov-icon.png') no-repeat center center/cover;
+  height: 40vh;
+}
+#section3 .project4 {
+  background: url('assets/img/bg/my-fantasy.jpg') no-repeat center center/cover;
+  height: 40vh;
+}
+#section3 .project5 {
+  background: url('assets/img/bg/tnims.png') no-repeat center center/cover;
+  height: 40vh;
+}
+#section3 .project6 {
+  background: url('assets/img/bg/ps4.jpg') no-repeat center center/cover;
   height: 40vh;
 }
 
@@ -292,7 +316,8 @@ header h2 {
   width: 50px;
   border-radius: 50%;
   background-color: transparent;
-  border: 2px solid #000;
+  color: blueviolet;
+  border: 2px solid blueviolet;
 }
 
 #section3 .work button:hover {
@@ -303,9 +328,15 @@ header h2 {
   height: 60px;
   width: 60px;
   border-radius: 50%;
-  box-shadow: 1px 2px 4px 6px blueviolet;
+  box-shadow: 1px 1px 2px 1px wheat;
   text-shadow: 0 0 10px blueviolet;
 }
+#section3 .project1 .pro-one,
+#section3 .project2 .pro-one,
+#section3 .project3 .pro-one,
+#section3 .project4 .pro-one,
+#section3 .project5 .pro-one,
+#section3 .project6 .pro-one,
 #section3 .project .pro-one {
   width: 100%;
   height: 80%;
@@ -322,7 +353,13 @@ header h2 {
   animation: fadeService 6s infinite ease-in-out;
   color: white;
 }
-#section3 .project p {
+#section3 .project p,
+#section3 .project1 p,
+#section3 .project2 p,
+#section3 .project3 p,
+#section3 .project4 p,
+#section3 .project5 p,
+#section3 .project6 p {
   color: white;
   background: linear-gradient(180deg, #0000, #000) ;
   font-size: 14px;
@@ -386,6 +423,11 @@ header h2 {
   text-align: center;
 }
 #section4 .card p {
+  line-height: normal;
+  text-align: center;
+}
+#section4 .card h6 {
+  line-height: normal;
   font-size: 12px;
   font-weight: 600;
   text-align: center;
@@ -410,7 +452,9 @@ header h2 {
   text-shadow: 2px 2px 5px blueviolet;
   perspective: 500px;
   
-
+}
+#section4 .sec4-one {
+  display: none;
 }
 
 #section4 h2 .two {
@@ -574,7 +618,14 @@ footer .social i {
   header .btn {
     display: block;
   }
-
+  #section1 img {
+    height: 35vh;
+    width: 100%;
+    animation: bounce 4s infinite;
+  }
+  #section1 p {
+    line-height: normal;
+  }
   #section2 .card {
     position: relative;
     height: 40vh;
@@ -590,6 +641,14 @@ footer .social i {
   #section3 .project {
     background: url('assets/img/bg/ps4.jpg') no-repeat center center/cover;;
     height: 25vh;
+  }
+  #section3 h3 {
+    font-size: 26px;
+    animation: fadeService 5s infinite ease-in-out;
+    font-weight: 900;
+    font-family: monospace;
+    color: wheat;
+    text-shadow: 0  0 10px blueviolet;
   }
   #viewModal {
     background: linear-gradient(95deg, #0049, #0009); 
@@ -629,5 +688,34 @@ footer .social i {
     line-height: 13px;
     width: 100%; 
     background: linear-gradient(180deg, #004,blueviolet );
+  }
+  #section4 .card {
+    display: flex;
+    justify-content: space-between;
+
+  }
+  #section4 .card i {
+    line-height: normal;
+    font-size: 18px;
+  }
+  #section4 .card h6 {
+    display: none;
+  }
+  #section4 h2 {
+    display: none;
+  }
+  #section4 .sec4-one {
+    display: block;
+    font-size: 26px;
+    animation: fadeService 5s infinite ease-in-out;
+    font-weight: 900;
+    font-family: monospace;
+    color: wheat;
+    text-shadow: 0  0 10px blueviolet;
+  }
+  #section4 h3 span {
+    animation: fadeService 6s infinite ease-in-out;
+    font-weight: 900;
+    color: white;
   }
 }
