@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IPRS Identity Verification</title>
+</head>
+<body>
+    <h1>IPRS Identity Verification</h1>
+    <form id="idForm">
+        <label for="idNumber">ID Number:</label>
+        <input type="text" id="idNumber" name="idNumber" required>
+        <button type="submit">Verify</button>
+    </form>
+
+    <h2>User Information</h2>
+    <p>First Name: <span id="firstName"></span></p>
+    <p>Second Name: <span id="secondName"></span></p>
+    <p>Last Name: <span id="lastName"></span></p>
+
+    <script>
+        document.getElementById('idForm').addEventListener('submit', function(event) {
+            event.preventDefault();
+            const idNumber = document.getElementById('idNumber').value;
+            fetch('verify.php', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json'
+                },
+                body: JSON.stringify({ idNumber: idNumber })
+            })
+            .then(response => response.json())
+            .then(data => {
+                if (data.code === "200.001") {
+                    document.getElementById('firstName').textContent = data.data.first_name;
+                    document.getElementById('secondName').textContent = data.data.other_name;
+                    document.getElementById('lastName').textContent = data.data.surname;
+                } else {
+                    alert('Verification failed: ' + data.message);
+                }
+            })
+            .catch(error => {
+                console.error('Error:', error);
+                alert('An error occurred while verifying the ID.');
+            });
+        });
+    </script>
+</body>
+</html>
