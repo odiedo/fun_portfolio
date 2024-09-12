@@ -1,362 +1,544 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio</title>
-    <link rel="stylesheet" href="assets/fonts/css/all.css">
-    <!-- Bootstrap core CSS -->
-    <link href="assets/dist/css/bootstrap.css" rel="stylesheet">
-    <link href="assets/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
 
+<head>
+    <meta charset="utf-8">
+    
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="Kenya business consulting, software consulting Kenya, custom software development Kenya, IT solutions for businesses, web development Kenya, mobile app development, enterprise software solutions, software for SMEs, Fun-Corp Developers Kenya, software companies Nairobi, tech solutions Africa" name="keywords">
+    <meta content="Fun-Corp Developers is a top-tier business and software consulting firm in Kenya, providing custom software development, IT solutions, and enterprise systems for businesses across Africa. We deliver web and mobile applications to help companies streamline operations and scale efficiently." name="description">
+    <meta name="google-site-verification" content="xc4biL3_0i3jv55Fcvz1CPlyHOxleRkCcZ1rn7AdReE" />
+    <title>Fun-Corp Developers - Leading Kenya Business & Software Consulting Services</title>
+    <!-- Favicon -->
+    <link href="img/favicon.ico" rel="icon">
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;600&family=Inter:wght@700;800&display=swap" rel="stylesheet"> 
+
+    <!-- Icon Font Stylesheet -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+
+    <!-- Libraries Stylesheet -->
+    <link href="lib/animate/animate.min.css" rel="stylesheet">
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Template Stylesheet -->
+    <link href="css/style.css" rel="stylesheet">
 </head>
+
 <body>
-    <header>
-        <div class="container">
-          <nav>
-            <div class="logo">
-              <img src="assets/img/logo/logo_one.png" alt="logo" />
-              <h2>FunCorp</h2>
+    <div class="container-xxl bg-white p-0">
+        <!-- Spinner Start -->
+        <div id="spinner" class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+            <div class="spinner-border text-primary" style="width: 3rem; height: 3rem;" role="status">
+                <span class="sr-only">Loading...</span>
             </div>
-            <ul>
-              <div class="btn">
-                <i class="fas fa-times close-btn"></i>
-              </div>
-              <li><a href="#sec">Home</a></li>
-              <li><a href="#section1">About</a></li>
-              <li><a href="#section4">Services</a></li>
-              <li><a href="#section2">Process</a></li>
-              <li><a href="#section3">Work</a></li>
-            </ul>
-            <div class="btn ">
-              <i class="fas fa-bars menu-btn"></i>
-            </div>
-          </nav>
         </div>
-    </header>
-    <main id="sec">
-      <div class="container">
-        <div class="content">
-          <div class="txt">
-            <h4>The Best Tech Experience</h4>
-            <h2>Fun-Corp <span>Developers!</span></h2>
-          </div>
-          <p>
-            Unparalled Design, Development & Team Augmentation
-          </p>
-          <div class="form-input">
-            <form action="#">
-              <input type="text" placeholder="Search our services :)" />
-            </form>
-            <button type="button">Search</button>
-          </div>
-        </div>
-      </div>
-    </main>
-    <div id="section1" class="section">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-6 col-xl-6 ">
-                    <div class="card bg-transparent border-0 p-0 m-0">
-                        <div class="card-body p-0 m-0">
-                            <img src="assets/img/bg/odiedo.jpg" alt="">
+        <!-- Spinner End -->
+
+
+        <!-- Navbar & Hero Start -->
+        <div class="container-xxl position-relative p-0">
+            <nav class="navbar navbar-expand-lg navbar-light px-4 px-lg-5 py-3 py-lg-0">
+                <a href="index.html" class="navbar-brand p-0">
+                    <h1 class="m-0">Fun-Corp</h1>
+                    <h2>Developers</h2>
+                    <!-- <img src="img/logo.png" alt="Logo"> -->
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+                    <span class="fa fa-bars"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarCollapse">
+                    <div class="navbar-nav ms-auto py-0">
+                        <a href="index.html" class="nav-item nav-link active">Home</a>
+                        <a href="about.html" class="nav-item nav-link">About</a>
+                        <a href="service.html" class="nav-item nav-link">Service</a>
+                        <a href="contact.html" class="nav-item nav-link">Contact</a>
+                    </div>
+                    <a href="" class="btn btn-light rounded-pill text-primary py-2 px-4 ms-lg-5">Free Quote</a>
+                </div>
+            </nav>
+
+            <div class="container-xxl bg-primary hero-header">
+                <div class="container">
+                    <div class="row g-5 align-items-center">
+                        <div class="col-lg-6 text-center text-lg-start">
+                            <h1 class="text-white mb-4 animated zoomIn">We Help To Push Your Business To The Top Level</h1>
+                            <p class="text-white pb-3 animated zoomIn">At the intersection of technology and strategy, we don't just build solutions—we create transformations. Let us propel your business beyond the ordinary and into the extraordinary. Together, we turn vision into reality.</p>
+                            <a href="" class="btn btn-outline-light rounded-pill border-2 py-3 px-5 animated slideInRight">Learn More</a>
+                        </div>
+                        <div class="col-lg-6 text-center text-lg-start">
+                            <img class="img-fluid animated zoomIn" src="img/hero.png" alt="">
                         </div>
                     </div>
                 </div>
-                <div class="col-md-6 col-xl-6 text-center">
-                    <h2 style="animation: fadeIn 4s ease-in-out;">We offer the Best IT Consultancy services</h2>
-                    <p class="text-center text-light p-0 m-0">Welcome to Fun-Corp Developers, a Software Engineering company based in Nairobi, Kenya. Since 2021, we have been delivering
-                      unique solutions to business around the world. Our skilled proffessionals, including consultants based in Kenya, Rwanda, Tanzania, Ethiopia and South Africa, are
-                      dedicated to creating custom software engineering solutions that meet the needs of our clients. Contact us to learn how we can help your business succeed with our expertise.
-                      We respond to inquiries withing 24 hours.
-                    </p>
-                    <!-- <button class="btn ">Learn more</button> -->
-                </div>
             </div>
         </div>
-    </div>
-    <div id="section4" class="section">
-      <div class="container-fluid">
-        <div class="row service-show pt-4">
-          <div class="container-fluid">
-            <div class="row sec4-one">
-              <div class="col-md-12">
-                <h3> <span>Ser</span>vices</h3>
-              </div>
-            </div>
-            <div class="row">
-              <div class="col-md-3 pt-5 seco">
-                <!-- <h3 class="title-sec p-2"> Services</h3> -->
-                <h2>Ser<span class="two">vices</span></h2>
-              </div>
-              <div class="col-md-9">
-                <div class="container-fluid">
-                  <div class="row">
-                    <div class="col-md-4 card bg-transparent border-0">
-                        <i class="fas fa-mobile-alt text-center"></i>
-                        <p class="para">
-                          <span>Mobile Application Development</span>
-                          <h6>We build stunning, reource optimized  mobile applications on Native and Hybrid platforms for Android and IOS devices.</h6>
-                        </p>
-                      
-                    </div>
-                    <div class="col-md-4 card bg-transparent border-0">
-                        <i class="fas fa-globe text-center"></i>
-                        <p class="">
-                          <span>Web Application Development</span>
-                          <h6>We build interactive and astonishing websites  using the latest technologies.</h6>
-                        </p>
-                      
-                    </div>
-                    <div class="col-md-4 card bg-transparent border-0">
-                        <i class="fas fa-paint-brush text-center"></i>
-                        <p class="">
-                          <span>UI Engineering</span>
-                          <h6>Transform your website into a stunning, user-friendly masterpiece with our expert UI engineering services. Our team has the skills and experience to elevate your online presence and 
-                            improve the overall user experience.</h6>
-                        </p>
-                    </div>
-                    <div class="col-md-4 card bg-transparent border-0">
-                        <i class="fas fa-rocket text-center"></i>
-                        <p class="">
-                          <span>MVP Product Development</span>
-                          <h6>
-                            With our MVP development ou can confidently  deploy  your application within the shortest amount of time. Plus, we have exciting revenue models designed for start-ups. 
-                          </h6>
-                        </p>
-                    </div>
-                    <div class="col-md-4 card bg-transparent border-0">
-                        <i class="fas fa-code text-center"></i>
-                        <p class="">
-                          <span>API Development </span>
-                          <h6>We are experts in developing API with Play and Node  based frameworks. We design, program, deploy and maintain your API layer. 
-                          </h6>
-                        </p>
-                    
-                    </div>
-                    <div class="col-md-4 card bg-transparent border-0">
-                        <i class="fas fa-users text-center"></i>
-                        <p class="">
-                          <span>Team Augmentation</span>
-                          <h6>Need to bring in extra resources for your project? Our team augmentation services, featuring skilled IT professionals from Africa, can help. Contact us today
-                            to learn more about how we can support  your project needs with our talented team of developers.  
-                          </h6>
-                        </p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div id="section3" class="section">
-      <div class="container-fluid">
-        <div class="row">
-          <div class="col-md-12">
-            <h3><span>my</span>Projects</h3>
-          </div>
-        </div>
-        <div class="row rw-1 d-flex justify-content-center">
-          <div class="col-5 col-md-4 col-xl-4 m-2 project">
-            <div class="pro-one">
-              <div class="work p-0 m-0">
-                <button class="btn" data-toggle="modal" data-target="#viewModal" ><i class="fas fa-play"></i></button>
-              </div>
-            </div>
-            <p class="text-center m-0"><span class="pt-4">Fun-Corp Shop & Restaurant POS</span></p>
-          </div>
-          <div class="col-5 col-md-4 col-xl-4 m-2 project1">
-            <div class="pro-one">
-              <div class="work p-0 m-0">
-                <button class="btn" data-toggle="modal" data-target="#viewModal" ><i class="fas fa-play"></i></button>
-              </div>
-            </div>
-            <p class="text-center m-0"><span class="pt-4">Fun-Corp Shop & Restaurant POS</span></p>
-          </div>
-          <!-- <div class="col-5 col-md-4 col-xl-4 m-2 project">
-            <div class="pro-one">
-              <div class="work p-0 m-0">
-                <button class="btn" data-toggle="modal" data-target="#viewModal" ><i class="fas fa-play"></i></button>
-              </div>
-            </div>
-            <p class="text-center m-0"><span class="pt-4">Fun-Corp Shop & Restaurant POS</span></p>
-          </div>
-          <div class="col-5 col-md-4 col-xl-4 m-2 project1">
-            <div class="pro-one">
-              <div class="work p-0 m-0">
-                <button class="btn" data-toggle="modal" data-target="#viewModal" ><i class="fas fa-play"></i></button>
-              </div>
-            </div>
-            <p class="text-center m-0"><span class="pt-4">Fun-Corp Shop & Restaurant POS</span></p>
-          </div> -->
-          <div class="col-5 col-md-3 col-xl-3 m-2 project2">
-            <div class="work p-0 m-0">
-              <button class="btn "><i class="fas fa-play"></i></button>
-            </div>
-          </div>
-          <div class="col-5 col-md-3 col-xl-3 m-2 project3">
-            <div class="work p-0 m-0">
-              <button class="btn "><i class="fas fa-play"></i></button>
-            </div>
-          </div>
-          <div class="col-5 col-md-4 col-xl-4 m-2 project4">
-            <div class="pro-one">
-              <div class="work p-0 m-0">
-                <button class="btn" data-toggle="modal" data-target="#viewModal" ><i class="fas fa-play"></i></button>
-              </div>
-            </div>
-            <p class="text-center m-0"><span class="pt-4">Fun-Corp Shop & Restaurant POS</span></p>
-          </div>
-          <div class="col-5 col-md-4 col-xl-4 m-2 project5">
-            <div class="pro-one">
-              <div class="work p-0 m-0">
-                <button class="btn" data-toggle="modal" data-target="#viewModal" ><i class="fas fa-play"></i></button>
-              </div>
-            </div>
-            <p class="text-center m-0"><span class="pt-4">Fun-Corp Shop & Restaurant POS</span></p>
-          </div>
-        </div>
-      </div>
-    </div>
-    <!-- <div id="section4" class="section">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-4">
-            <div class="card p-0 mb-2 border-0 shadow-none">
-              <div class="card-body">
-                <div class="pb-2 pl-0 pr-0">
-                  <img src="assets/img/bg/bg.jpg" alt="team">
-                </div>
-                <p>Odiedo Paul</p>
-                <p>Chief Technology Officer</p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div> -->
-    <div id="section2" class="section">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-6 col-xl-6 pt-4 text-center">
-            <h2 style="animation: fadeIn 4s ease-in-out;">We offer the Best IT Consultancy services</h2>
-            <p class="text-center text-light">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ab pariatur saepe distinctio sunt amet omnis voluptates consequuntur placeat nobis </p>
-            <button class="btn">open</button>
-          </div>
-          <div class="col-md-6 col-xl-6 ">
-            <div class="card bg-transparent border-0 p-0 m-0">
-              <div class="card-body p-0 m-0">
-                <video autoplay  muted controls loop oncontextmenu="false" load="lazy">
-                  <source src="assets/video/ka.mp4" type="video/mp4">
-                </video>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-      <footer class="container-fluid">
-        <div class="row pt-3 pb-3 quote">
-          <div class="col-md-8">
-            <h2>Need a Quote?</h2>
-            <p>We are here to help and answer any question you might have about our services and products. We look forward to hearing from you.</p>
-          </div>
-          <div class="col-md-4">
-            <div class="pt-3">
-              <button class="btn ">Get A free Quote <i class="fas fa-angle-right"></i> </button>
-            </div>
-          </div>
-        </div>
-        <div class="row pt-3 pb-3">
-          <div class="col-md-4">
-            <img src="assets/img/logo/logo_one.png" alt="logo">
-          </div>
-          <div class="col-md-4">
-            <h3>Get in touch</h3>
-            <p class="pl-3"><i class="fas fa-envelope"></i> info@funcorp.com</p>
-            <p class="pl-3"><i class="fas fa-phone"></i> +254 759 680 813</p>
+        <!-- Navbar & Hero End -->
 
-            <h3>Quick links</h3>
-            <p class="pl-3">
-              <a href="#">Home</a>
-              <a href="#">About</a>
-              <a href="#">Services</a>
-              <a href="#" class="text-shadow-1">Work</a>
-            </p>
-          </div>
-          <div class="col-md-4">
-              <h3>Location</h3>
-              <p class="pl-3"><i class="fas fa-map-pin"></i> Malaba Roadblock, Malaba </p>
-              <h3>Follow us</h3>
-              <p class="pl-3 social">
-                <i class="fab fa-facebook"></i>
-                <i class="fab fa-whatsapp"></i>
-                <i class="fab fa-twitter"></i>
-                <i class="fab fa-instagram"></i>
-                <i class="fab fa-tiktok"></i>
-              </p>
-          </div>
-      </div>
-      <br><br><br>
-      <div class="row" style="position: absolute; bottom: 0; width: 90%; margin: auto;">
-        <div class="col-md-12 text-center">
-            <p class="border-top">Proudly created by <a href="#" class="text-white">Odiedo</a>. Copyright <a href="file:///home/odiedo/development/constituency_web/index_4.html#" class="text-white">@Fun-corp Developers</a>.</p>
+        <!-- About Start -->
+        <div class="container-xxl py-6">
+            <div class="container">
+                <div class="row g-5 align-items-center">
+                    <div class="col-lg-6 wow zoomIn" data-wow-delay="0.1s">
+                        <img class="img-fluid" src="img/about.png">
+                    </div>
+                    <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.1s">
+                        <div class="d-inline-block border rounded-pill text-primary px-4 mb-3">About Us</div>
+                        <h2 class="mb-4">Leading the Future of Business with Innovation and Insight</h2>
+                        <p class="mb-4">With a blend of cutting-edge software engineering and expert business consultancy, we deliver solutions that are more than just functional—they're transformative. We partner with businesses to help them scale, innovate, and lead with purpose.</p>
+                        <div class="row g-3 mb-4">
+                            <div class="col-12 d-flex">
+                                <div class="flex-shrink-0 btn-lg-square rounded-circle bg-primary">
+                                    <i class="fa fa-user-tie text-white"></i>
+                                </div>
+                                <div class="ms-4">
+                                    <h6>Strategic Business Planning</h6>
+                                    <span>We craft strategies that not only address today's challenges but position your business for future growth and success. Your journey to market leadership starts here.</span>
+                                </div>
+                            </div>
+                            <div class="col-12 d-flex">
+                                <div class="flex-shrink-0 btn-lg-square rounded-circle bg-primary">
+                                    <i class="fa fa-chart-line text-white"></i>
+                                </div>
+                                <div class="ms-4">
+                                    <h6>Data-Driven Financial Analysis</h6>
+                                    <span>Our financial insights empower your business to make smarter, faster decisions. We analyze, optimize, and turn data into a powerful competitive advantage.</span>
+                                </div>
+                            </div>
+                        </div>
+                        <a class="btn btn-primary rounded-pill py-3 px-5 mt-2" href="">Read More</a>
+                    </div>
+                </div>
+            </div>
         </div>
-    </div>
-  </footer>
-    <!-- Cart Modal -->
-    <div class="modal fade" id="viewModal" tabindex="-1" role="dialog" aria-labelledby="ViewModalModalTitle" aria-hidden="true">
-      <div class="modal-content shadow-none p-2 m-0">
-        <div class="container-fluid">
-          <div class="row">
-            <div class="col-md-12 d-flex justify-content-between">
-              <i></i>
-              <button type="button" class="close " data-dismiss="modal" aria-label="Close" style="font-weight: 900; outline: none; color: red;">
-                <span aria-hidden="true" class="">&times;</span> 
-            </button>
-            </div>
-          </div>
-          <div class="row">
-            <div class="col-md-7 bg-transparent">
-                <video controls muted>
-                  <source src="assets/video/VID-20240413-WA0001.mp4">
-                </video>
-            </div>
-            <div class="col-md-5 modal-pro p-2">
-              <h4>Fun-Corp Shop & Restaurant POS</h4>
-              <span>
-                FunCorp's primary product is a complete, modern restaurants and shops POS system that runs on Android devices. 
-                Our POS system is designed to make it easy for restaurant or shop staff to take orders, process payments, and manage other tasks related to running a successful restaurant or shop.  
-                With features like menu management, inventory tracking, and real-time sales reporting, our POS system has everything you 
-                need to keep your restaurant or shop running smoothly and efficiently. 
-                Best of all, our POS system is available in the Google Playstore, making it easy for restaurant and shop owners 
-                and staff to get started using it right away.
-              </span>
-              <h6>Technology:</h6>
-              <span class="d-flex justify-content-between">HTML CSS JavaScript PHP MySQL Mpesa Payment Intergration</span>
-            </div>
-          </div>
-        </div>            
-      </div>
-    </div>
-  <script>
-    const menus = document.querySelector("nav ul");
-    const menusBtn = document.querySelector(".menu-btn");
-    const closeBtn = document.querySelector(".close-btn");
+        <!-- About End -->
 
-    menusBtn.addEventListener("click", function () {
-      menus.classList.add("display");
-    });
-    closeBtn.addEventListener("click", function () {
-      menus.classList.remove("display");
-    });
-  </script>
-  <script src="jquery/jquery-3.3.1.min.js"></script>
-  <script src="script.js"></script>
-  <script src="assets/dist/js/bootstrap.bundle.js"></script>
-  <script src="assets/dist/js/bootstrap.min.js"></script>
+
+        <!-- Newsletter Start -->
+        <div class="container-xxl bg-primary my-6 wow fadeInUp" data-wow-delay="0.1s">
+            <div class="container px-lg-5">
+                <div class="row align-items-center" style="height: 250px;">
+                    <div class="col-12 col-md-6">
+                        <h3 class="text-white">Ready to Transform Your Business?</h3>
+                        <small class="text-white">Join a community of forward-thinking leaders unlocking new possibilities.</small>
+                        <div class="position-relative w-100 mt-3">
+                            <input class="form-control border-0 rounded-pill w-100 ps-4 pe-5" type="text" placeholder="Enter Your Email" style="height: 48px;">
+                            <button type="button" class="btn shadow-none position-absolute top-0 end-0 mt-1 me-2"><i class="fa fa-paper-plane text-primary fs-4"></i></button>
+                        </div>
+                    </div>
+                    <div class="col-md-6 text-center mb-n5 d-none d-md-block">
+                        <img class="img-fluid mt-5" style="max-height: 250px;" src="img/newsletter.png">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Newsletter End -->
+
+
+        <!-- Service Start -->
+        <div class="container-xxl py-6">
+            <div class="container">
+                <div class="mx-auto text-center wow fadeInUp" data-wow-delay="0.1s" style="max-width: 600px;">
+                    <div class="d-inline-block border rounded-pill text-primary px-4 mb-3">Our Services</div>
+                    <h2 class="mb-5">Tailored Solutions for Your Business Growth</h2>
+                </div>
+                <div class="row g-4">
+                    <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+                        <div class="service-item rounded h-100">
+                            <div class="d-flex justify-content-between">
+                                <div class="service-icon">
+                                    <i class="fa fa-user-tie fa-2x"></i>
+                                </div>
+                                <a class="service-btn" href="">
+                                    <i class="fa fa-link fa-2x"></i>
+                                </a>
+                            </div>
+                            <div class="p-5">
+                                <h5 class="mb-3">Business Research</h5>
+                                <span>We dive deep into market trends and business landscapes to provide data-driven insights that fuel your success.</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
+                        <div class="service-item rounded h-100">
+                            <div class="d-flex justify-content-between">
+                                <div class="service-icon">
+                                    <i class="fa fa-chart-pie fa-2x"></i>
+                                </div>
+                                <a class="service-btn" href="">
+                                    <i class="fa fa-link fa-2x"></i>
+                                </a>
+                            </div>
+                            <div class="p-5">
+                                <h5 class="mb-3">Strategic Planning</h5>
+                                <span>We design comprehensive strategies that empower your business to navigate challenges and seize opportunities.</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.6s">
+                        <div class="service-item rounded h-100">
+                            <div class="d-flex justify-content-between">
+                                <div class="service-icon">
+                                    <i class="fa fa-chart-line fa-2x"></i>
+                                </div>
+                                <a class="service-btn" href="">
+                                    <i class="fa fa-link fa-2x"></i>
+                                </a>
+                            </div>
+                            <div class="p-5">
+                                <h5 class="mb-3">Market Analysis</h5>
+                                <span>Analyze your market position, understand your competition, and find your edge with our expert market insights.</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+                        <div class="service-item rounded h-100">
+                            <div class="d-flex justify-content-between">
+                                <div class="service-icon">
+                                    <i class="fa fa-chart-area fa-2x"></i>
+                                </div>
+                                <a class="service-btn" href="">
+                                    <i class="fa fa-link fa-2x"></i>
+                                </a>
+                            </div>
+                            <div class="p-5">
+                                <h5 class="mb-3">Financial Analysis</h5>
+                                <span>Our financial experts offer insights that optimize your operations, ensuring profitable and sustainable growth.</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
+                        <div class="service-item rounded h-100">
+                            <div class="d-flex justify-content-between">
+                                <div class="service-icon">
+                                    <i class="fa fa-balance-scale fa-2x"></i>
+                                </div>
+                                <a class="service-btn" href="">
+                                    <i class="fa fa-link fa-2x"></i>
+                                </a>
+                            </div>
+                            <div class="p-5">
+                                <h5 class="mb-3">Legal Advisory</h5>
+                                <span>Navigate complex regulations with ease and confidence, with our expert legal advisory services tailored for your needs.</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.6s">
+                        <div class="service-item rounded h-100">
+                            <div class="d-flex justify-content-between">
+                                <div class="service-icon">
+                                    <i class="fa fa-house-damage fa-2x"></i>
+                                </div>
+                                <a class="service-btn" href="">
+                                    <i class="fa fa-link fa-2x"></i>
+                                </a>
+                            </div>
+                            <div class="p-5">
+                                <h5 class="mb-3">Tax & Insurance</h5>
+                                <span>Our expert guidance ensures your tax strategy is optimized, and your business is protected with the right insurance policies.</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Service End -->
+
+
+        <!-- Features Start -->
+        <div class="container-xxl py-6">
+            <div class="container">
+                <div class="row g-5">
+                    <div class="col-lg-5 wow fadeInUp" data-wow-delay="0.1s">
+                        <div class="d-inline-block border rounded-pill text-primary px-4 mb-3">Features</div>
+                        <h2 class="mb-4">Why People Choose Us? We Are a Trusted & Award-Winning Agency</h2>
+                        <p>We offer quality services and build lasting relationships with our clients. Our industry expertise and commitment to excellence ensure that we deliver top-notch results every time.</p>
+                        <a class="btn btn-primary rounded-pill py-3 px-5 mt-2" href="">Read More</a>
+                    </div>
+                    <div class="col-lg-7">
+                        <div class="row g-5">
+                            <div class="col-sm-6 wow fadeIn" data-wow-delay="0.1s">
+                                <div class="d-flex align-items-center mb-3">
+                                    <div class="flex-shrink-0 btn-square bg-primary rounded-circle me-3">
+                                        <i class="fa fa-cubes text-white"></i>
+                                    </div>
+                                    <h6 class="mb-0">Best In Industry</h6>
+                                </div>
+                                <span>We provide the best solutions with a focus on quality and innovation.</span>
+                            </div>
+                            <div class="col-sm-6 wow fadeIn" data-wow-delay="0.2s">
+                                <div class="d-flex align-items-center mb-3">
+                                    <div class="flex-shrink-0 btn-square bg-primary rounded-circle me-3">
+                                        <i class="fa fa-percent text-white"></i>
+                                    </div>
+                                    <h6 class="mb-0">99% Success Rate</h6>
+                                </div>
+                                <span>Our track record speaks for itself with high client satisfaction rates.</span>
+                            </div>
+                            <div class="col-sm-6 wow fadeIn" data-wow-delay="0.3s">
+                                <div class="d-flex align-items-center mb-3">
+                                    <div class="flex-shrink-0 btn-square bg-primary rounded-circle me-3">
+                                        <i class="fa fa-award text-white"></i>
+                                    </div>
+                                    <h6 class="mb-0">Award Winning</h6>
+                                </div>
+                                <span>We are recognized for our exceptional contributions in the industry.</span>
+                            </div>
+                            <div class="col-sm-6 wow fadeIn" data-wow-delay="0.4s">
+                                <div class="d-flex align-items-center mb-3">
+                                    <div class="flex-shrink-0 btn-square bg-primary rounded-circle me-3">
+                                        <i class="fa fa-smile-beam text-white"></i>
+                                    </div>
+                                    <h6 class="mb-0">100% Happy Clients</h6>
+                                </div>
+                                <span>Client satisfaction is our priority, and we ensure every project exceeds expectations.</span>
+                            </div>
+                            <div class="col-sm-6 wow fadeIn" data-wow-delay="0.5s">
+                                <div class="d-flex align-items-center mb-3">
+                                    <div class="flex-shrink-0 btn-square bg-primary rounded-circle me-3">
+                                        <i class="fa fa-user-tie text-white"></i>
+                                    </div>
+                                    <h6 class="mb-0">Professional Advisors</h6>
+                                </div>
+                                <span>Our experienced team offers expert advice to help you achieve your goals.</span>
+                            </div>
+                            <div class="col-sm-6 wow fadeIn" data-wow-delay="0.6s">
+                                <div class="d-flex align-items-center mb-3">
+                                    <div class="flex-shrink-0 btn-square bg-primary rounded-circle me-3">
+                                        <i class="fa fa-headset text-white"></i>
+                                    </div>
+                                    <h6 class="mb-0">24/7 Customer Support</h6>
+                                </div>
+                                <span>We are available around the clock to assist with any of your needs.</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Features End -->
+
+
+        <!-- Client Start -->
+        <div class="container-xxl bg-primary my-6 py-5 wow fadeInUp" data-wow-delay="0.1s">
+            <div class="container">
+                <div class="owl-carousel client-carousel">
+                    <a href="#"><img class="img-fluid" src="img/logo-1.png" alt=""></a>
+                    <a href="#"><img class="img-fluid" src="img/logo-2.png" alt=""></a>
+                    <a href="#"><img class="img-fluid" src="img/logo-3.png" alt=""></a>
+                    <a href="#"><img class="img-fluid" src="img/logo-4.png" alt=""></a>
+                    <a href="#"><img class="img-fluid" src="img/logo-5.png" alt=""></a>
+                    <a href="#"><img class="img-fluid" src="img/logo-6.png" alt=""></a>
+                    <a href="#"><img class="img-fluid" src="img/logo-7.png" alt=""></a>
+                    <a href="#"><img class="img-fluid" src="img/logo-8.png" alt=""></a>
+                </div>
+            </div>
+        </div>
+        <!-- Client End -->
+
+
+        <!-- Testimonial Start -->
+        <div class="container-xxl py-6">
+            <div class="container">
+                <div class="mx-auto text-center wow fadeInUp" data-wow-delay="0.1s" style="max-width: 600px;">
+                    <div class="d-inline-block border rounded-pill text-primary px-4 mb-3">Testimonial</div>
+                    <h2 class="mb-5">What Our Clients Say!</h2>
+                </div>
+                <div class="owl-carousel testimonial-carousel wow fadeInUp" data-wow-delay="0.1s">
+                    <div class="testimonial-item rounded p-4">
+                        <i class="fa fa-quote-left fa-2x text-primary mb-3"></i>
+                        <p>We experienced top-notch service and great results from this team. They are dedicated and focused on customer success.</p>
+                        <div class="d-flex align-items-center">
+                            <img class="img-fluid flex-shrink-0 rounded-circle" src="https://via.placeholder.com/150" alt="Client Image">
+                            <div class="ps-3">
+                                <h6 class="mb-1">Felix Etyang</h6>
+                                <small>Business Owner</small>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="testimonial-item rounded p-4">
+                        <i class="fa fa-quote-left fa-2x text-primary mb-3"></i>
+                        <p>They understood our needs perfectly and delivered solutions beyond our expectations. Highly recommended!</p>
+                        <div class="d-flex align-items-center">
+                            <img class="img-fluid flex-shrink-0 rounded-circle" src="https://via.placeholder.com/150" alt="Client Image">
+                            <div class="ps-3">
+                                <h6 class="mb-1">Alice Muthoni</h6>
+                                <small>Marketing Manager</small>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="testimonial-item rounded p-4">
+                        <i class="fa fa-quote-left fa-2x text-primary mb-3"></i>
+                        <p>Their professionalism and support are unmatched. We couldn't be happier with the service provided.</p>
+                        <div class="d-flex align-items-center">
+                            <img class="img-fluid flex-shrink-0 rounded-circle" src="https://via.placeholder.com/150" alt="Client Image">
+                            <div class="ps-3">
+                                <h6 class="mb-1">Eliud Kipsang</h6>
+                                <small>IT Director</small>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="testimonial-item rounded p-4">
+                        <i class="fa fa-quote-left fa-2x text-primary mb-3"></i>
+                        <p>Outstanding team with exceptional expertise! They delivered timely and exceeded our expectations.</p>
+                        <div class="d-flex align-items-center">
+                            <img class="img-fluid flex-shrink-0 rounded-circle" src="https://via.placeholder.com/150" alt="Client Image">
+                            <div class="ps-3">
+                                <h6 class="mb-1">Emily Oyugis</h6>
+                                <small>CEO</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Testimonial End -->
+
+
+        <!-- Team Start -->
+        <div class="container-xxl py-6">
+            <div class="container">
+                <div class="mx-auto text-center wow fadeInUp" data-wow-delay="0.1s" style="max-width: 600px;">
+                    <div class="d-inline-block border rounded-pill text-primary px-4 mb-3">Our Team</div>
+                    <h2 class="mb-5">Meet Our Team Members</h2>
+                </div>
+                <div class="row g-4">
+                    <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+                        <div class="team-item">
+                            <h5>Odiedo Paul</h5>
+                            <p class="mb-4">Director</p>
+                            <img class="img-fluid rounded-circle  mb-4" src="img/team-1.jpg" alt="" style="height:  200px; width: 270px;">
+                            <div class="d-flex justify-content-center">
+                                <a class="btn btn-square text-primary bg-white m-1" href="#"><i class="fab fa-facebook-f"></i></a>
+                                <a class="btn btn-square text-primary bg-white m-1" href="#"><i class="fab fa-twitter"></i></a>
+                                <a class="btn btn-square text-primary bg-white m-1" href="#"><i class="fab fa-linkedin-in"></i></a>
+                                <a class="btn btn-square text-primary bg-white m-1" href="tel:+254743050069"><i class="fas fa-phone"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
+                        <div class="team-item">
+                            <h5>Benjamin Tipape</h5>
+                            <p class="mb-4">Project Manager</p>
+                            <img class="img-fluid rounded-circle w-100 mb-4" src="img/team-4.jpg" alt="" style="height:  200px; width: 270px;">
+                            <div class="d-flex justify-content-center">
+                                <a class="btn btn-square text-primary bg-white m-1" href="#"><i class="fab fa-facebook-f"></i></a>
+                                <a class="btn btn-square text-primary bg-white m-1" href="#"><i class="fab fa-twitter"></i></a>
+                                <a class="btn btn-square text-primary bg-white m-1" href="#"><i class="fab fa-linkedin-in"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
+                        <div class="team-item">
+                            <h5>James Odaba</h5>
+                            <p class="mb-4">CTO</p>
+                            <img class="img-fluid rounded-circle w-100 mb-4" src="img/team-3.jpg" alt="" style="height:  200px; width: 270px;">
+                            <div class="d-flex justify-content-center">
+                                <a class="btn btn-square text-primary bg-white m-1" href="#"><i class="fab fa-facebook-f"></i></a>
+                                <a class="btn btn-square text-primary bg-white m-1" href="#"><i class="fab fa-twitter"></i></a>
+                                <a class="btn btn-square text-primary bg-white m-1" href="#"><i class="fab fa-linkedin-in"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.7s">
+                        <div class="team-item">
+                            <h5>Juliet Gisemba</h5>
+                            <p class="mb-4">Human Resource</p>
+                            <img class="img-fluid rounded-circle w-100 mb-4" src="img/team-2.jpg" alt="" style="height:  200px; width: 270px;">
+                            <div class="d-flex justify-content-center">
+                                <a class="btn btn-square text-primary bg-white m-1" href=""><i class="fab fa-facebook-f"></i></a>
+                                <a class="btn btn-square text-primary bg-white m-1" href=""><i class="fab fa-twitter"></i></a>
+                                <a class="btn btn-square text-primary bg-white m-1" href=""><i class="fab fa-linkedin-in"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Team End -->
+        
+
+        <!-- Footer Start -->
+        <div class="container-fluid bg-dark text-light footer pt-5 wow fadeIn" data-wow-delay="0.1s" style="margin-top: 6rem;">
+            <div class="container py-5">
+                <div class="row g-5">
+                    <div class="col-md-6 col-lg-3">
+                        <h5 class="text-white mb-4">Get In Touch</h5>
+                        <p><i class="fa fa-map-marker-alt me-3"></i>Mombasa, Kenya</p>
+                        <p><i class="fa fa-phone-alt me-3"></i>+254-743-050-069</p>
+                        <p><i class="fa fa-envelope me-3"></i>odiedopaul@gmail.com</p>
+                        <div class="d-flex pt-2">
+                            <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-twitter"></i></a>
+                            <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-facebook-f"></i></a>
+                            <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-youtube"></i></a>
+                            <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-instagram"></i></a>
+                            <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-linkedin-in"></i></a>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-3">
+                        <h5 class="text-white mb-4">Quick Link</h5>
+                        <a class="btn btn-link" href="">About Us</a>
+                        <a class="btn btn-link" href="">Contact Us</a>
+                        <a class="btn btn-link" href="">Privacy Policy</a>
+                        <a class="btn btn-link" href="">Terms & Condition</a>
+                        <a class="btn btn-link" href="">Career</a>
+                    </div>
+                    <div class="col-md-6 col-lg-3">
+                        <h5 class="text-white mb-4">Popular Link</h5>
+                        <a class="btn btn-link" href="">About Us</a>
+                        <a class="btn btn-link" href="">Contact Us</a>
+                        <a class="btn btn-link" href="">Privacy Policy</a>
+                        <a class="btn btn-link" href="">Terms & Condition</a>
+                        <a class="btn btn-link" href="">Career</a>
+                    </div>
+                    <div class="col-md-6 col-lg-3">
+                        <h5 class="text-white mb-4">Subscribe to Our Newsletter</h5>
+                        <p>Stay updated with the latest news, offers, and trends. Enter your email below to subscribe now!</p>
+                        <div class="position-relative w-100 mt-3">
+                            <input class="form-control border-0 rounded-pill w-100 ps-4 pe-5" type="text" placeholder="Enter your email address" style="height: 48px;">
+                            <button type="button" class="btn shadow-none position-absolute top-0 end-0 mt-1 me-2"><i class="fa fa-paper-plane text-primary fs-4"></i></button>
+                        </div>
+                    </div>                    
+                </div>
+            </div>
+            <div class="container">
+                <div class="copyright">
+                    <div class="row">
+                        <div class="col-md-12 text-center mb-3 mb-md-0">
+                            &copy; <a class="border-bottom" href="#">Fun-Corp Developers</a>, All Right Reserved. 
+							
+							<!--/*** This template is free as long as you keep the footer author’s credit link/attribution link/backlink. If you'd like to use the template without the footer author’s credit link/attribution link/backlink, you can purchase the Credit Removal License from "https://htmlcodex.com/credit-removal". Thank you for your support. ***/-->
+							Designed By <a class="border-bottom" href="https://htmlcodex.com">Odiedo Paul</a>
+                            <br>Distributed By: <a class="border-bottom" href="https://themewagon.com" target="_blank">Fun-Corp Developers</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Footer End -->
+
+
+        <!-- Back to Top -->
+        <a href="#" class="btn btn-lg btn-primary btn-lg-square back-to-top"><i class="bi bi-arrow-up"></i></a>
+    </div>
+
+    <!-- JavaScript Libraries -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/wow/wow.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/waypoints/waypoints.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+
+    <!-- Template Javascript -->
+    <script src="js/main.js"></script>
 </body>
+
 </html>
